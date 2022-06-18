@@ -1,0 +1,22 @@
+{
+  "name": "alibazon",
+  "version": "1.0.0",
+  "description": "osfacad_jun15",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/hakanecavus/alibazon"
+  },
+  "author": "Hakan Emre Cavus",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^7.1.1",
+    "@sentry/tracing": "^7.1.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
