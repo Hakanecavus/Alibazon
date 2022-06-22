@@ -3,7 +3,7 @@ const router  = express.Router();
 const homeController = require('../controllers/home');
 
 //router.get('/', authController.getData);
-router.get('/home', homeController.postLogin);
+router.get('/', homeController.postLogin);
 //router.route('/').get(postData);
 
 //module.exports = router;

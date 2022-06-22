@@ -78,14 +78,15 @@
         <% if (i == 0) { %>
           <div class="carousel-item active">
             <div class="container">
-              <img src="/images/<%= category_list[i].image %>" id= "<%= category_list[i].id %>" class="d-block w-100">
+              <a href="/subcategory/<%= category_list[i].id %>"><img src="/images/<%= category_list[i].image %>"  id= "<%= category_list[i].id %>" class="d-block w-100" ></a>
+              
             </div>
           </div>
         
         <% } else { %>
           <div class="carousel-item">
             <div class="container">
-              <img src="/images/<%= category_list[i].image %>" id= "<%= category_list[i].id %>" class="d-block w-100" >
+              <a href="/subcategory/<%= category_list[i].id %>"><img src="/images/<%= category_list[i].image %>"  id= "<%= category_list[i].id %>" class="d-block w-100" ></a>
             </div>
           </div>
         <% } %>

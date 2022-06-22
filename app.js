@@ -6,7 +6,7 @@ const https = require('https');
 
 const app = express();
 const homeRoute = require('./routes/home'); // import the routes
-const subCategoryRoute = require('./routes/subcategory'); // import the routes
+const subCategoryRoute = require('./routes/categories'); // import the routes
 
 //const authRoutes = require('../routes/auth');
 
@@ -45,8 +45,8 @@ app.use(function onError(err, req, res, next) {
     res.end(res.sentry + "\n");
 });
 app.use(express.json());
-app.use(homeRoute);
-app.use(subCategoryRoute);
+app.use('/home',homeRoute);
+app.use('/categories',subCategoryRoute);
 
 /*app.get("/debug-sentry", function mainHandler(req, res) {
     throw new Error("My first Sentry error!");
