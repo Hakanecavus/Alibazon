@@ -8,15 +8,15 @@
     <title>Alibazon | Categories</title>
 </head>
 <body>
-    <!--<h1><%= category_list[0].page_title%></h1>-->
-    <% if (category_list.length > 0) { %>
+    
+    <% if (product_list.length > 0) { %>
         <div class ="container">
-            <% for (let category of category_list) { %>
+            <% for (let product of product_list) { %>
                 <div class="row">
                     <div class="col">
-                        <a href="/subcategoryDetail/<%= category.id %>"><img src="/images/<%= category.image %>"  id= "<%= category.id %>" class="d-block w-100" ></a>
+                        <a href="/product/<%= product.id %>"><img src="/images/<%= product.image_groups[0].images[0].link %>"  id= "<%= product.id %>" class="d-block w-100" ></a>
                         <div class ="container">
-                            <h4><%= category.page_description %></h4>
+                            <h4><%= product.page_description %></h4>
                         </div>
                     
                     </div>

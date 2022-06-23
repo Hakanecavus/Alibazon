@@ -26,11 +26,11 @@ exports.getSubcategory = (req,res) =>{
     
         resp.on("end", () =>{
           json = JSON.parse(data);
-          var keys = Object.keys(json);
+          //var keys = Object.keys(json);
           //var deneme = json[keys[0]].page_description;
-          console.log(json)
-          for (var i = 0; i < keys.length; i++) {
-            let category = new categories(json[keys[i]].image, json[keys[i]]._id, json[keys[i]].id, json[keys[i]].page_description, json[keys[i]].page_title, json[keys[i]].parent_category_id,json[keys[i]].c_showInMenu, json[keys[i]].__v);
+          //console.log(json)
+          for (var i = 0; i < json.length; i++) {
+            let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
             //console.log(category.id)
             if(category.image !='categories/category_404.png'){
               category_list.push(category)

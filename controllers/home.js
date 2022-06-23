@@ -38,7 +38,7 @@ const categories = require('../models/categories');
               //console.table(first)
               /*var keys = Object.keys(json);
               for (var i = 0; i < keys.length; i++) {
-                console.log(json[keys[i]].short_description, json[keys[i]].id);//JSON dan istediğin veriyi çekme yolu
+                console.log(json[i].short_description, json[i].id);//JSON dan istediğin veriyi çekme yolu
               }
           } catch (error) {
               console.error(error.message);
@@ -76,21 +76,33 @@ exports.postLogin = (req, res) => {
   https.get(options,resp =>{
     resp.on("data", (chunk) => {
       data += chunk;
+      //console.log(chunk)
     });
 
     resp.on("end", () =>{
       json = JSON.parse(data);
-      var keys = Object.keys(json);
-      var deneme = json[keys[0]].page_description;
-      for (var i = 0; i < keys.length; i++) {
-        let category = new categories(json[keys[i]].image, json[keys[i]]._id, json[keys[i]].id, json[keys[i]].page_description, json[keys[i]].page_title, json[keys[i]].parent_category_id,json[keys[i]].c_showInMenu, json[keys[i]].__v);
+      //console.log(typeof data)
+      //var keys = Object.keys(json);
+      console.log(json[0].page_description)
+      //var deneme = json[0].page_description;
+      //console.log(deneme)
+      for (var i = 0; i < json.length; i++) {
+        if(json[i].parent_category_id =='mens' || json[i].parent_category_id =='womens'){
+          let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
         //console.log(category.image !='categories/category_404.png')
         if(category.image !='categories/category_404.png'){
           category_list.push(category)
         }
+        }
+        //let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
+        //let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
+        //console.log(category.image !='categories/category_404.png')
+        //if(category.image !='categories/category_404.png'){
+        //  category_list.push(category)
+        //}
         //category_list.push(category)
         
-        //console.log(json[keys[i]].short_description, json[keys[i]].id);//JSON dan istediğin veriyi çekme yolu
+        //console.log(json[i].short_description, json[i].id);//JSON dan istediğin veriyi çekme yolu
       }
       
       //res.send(category_list)
@@ -138,7 +150,7 @@ exports.postLogin = (req, res) => {
           
           /*var keys = Object.keys(json);   
           for (var i = 0; i < 1; i++) {
-            deneme1234= json[keys[i]].short_description
+            deneme1234= json[i].short_description
             console.log(deneme1234);//JSON dan istediğin veriyi çekme yolu
             
           }
