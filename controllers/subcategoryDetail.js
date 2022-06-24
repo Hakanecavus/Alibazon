@@ -30,18 +30,6 @@ exports.getProducts = (req,res) =>{
                 json[i].type, json[i].variants, json[i].variation_attributes, json[i]._id)
             product_list.push(product);
           }
-
-          /*for (var i = 0; i < json.length; i++) {
-            let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
-            
-            if(category.image !='categories/category_404.png'){
-              category_list.push(category)
-            }
-            
-          }
-          
-          
-          console.log(category_list)*/
           res.render('shop/subcategoryDetail', {
             product_list: product_list,
             pageTitle: 'Sub Category Detail',

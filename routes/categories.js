@@ -4,5 +4,4 @@ const subCategoryController = require('../controllers/categories');
 
 router.get('/:categoryId', subCategoryController.getSubcategory);
 
-
 module.exports = router;

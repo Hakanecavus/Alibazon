@@ -31,17 +31,6 @@ exports.getProduct = (req,res) =>{
             product_list.push(product);
           }
 
-          /*for (var i = 0; i < json.length; i++) {
-            let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id,json[i].c_showInMenu, json[i].__v);
-            
-            if(category.image !='categories/category_404.png'){
-              category_list.push(category)
-            }
-            
-          }
-          
-          
-          console.log(category_list)*/
           res.render('shop/products', {
             product_list: product_list,
             pageTitle: 'Product Detail',
