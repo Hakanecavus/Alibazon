@@ -1,0 +1,29 @@
+<%- include('../partials/navbar'); -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibazon | Product Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="card" style="flex-direction: row;">
+                <a><img class="card-img-top" src="/images/<%= product_list[0].image_groups[0].images[0].link %>" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><%= product_list[0].name %></h5>
+                    <p class="card-text"><%= product_list[0].page_description %></p>
+                </div>
+                <div class="card-footer d-flex flex-column">
+                    <p class="card-text"><small class="text-muted">Price: <%= product_list[0].price %> <%= product_list[0].currency %></small></p>
+                    <button type="button" class="btn btn-primary mt-auto">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<%- include('../partials/footer'); -%>
