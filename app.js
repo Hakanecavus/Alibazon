@@ -9,6 +9,7 @@ const homeRoute = require('./routes/home');
 const categoryRoute = require('./routes/categories');
 const subCategoryRoute = require('./routes/subcategory');
 const subCategoryDetailRoute = require('./routes/subcategoryDetail');
+const productsRoute = require('./routes/products');
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine","ejs");
@@ -41,4 +42,7 @@ app.use('/home',homeRoute);
 app.use('/categories',categoryRoute);
 app.use('/subcategory',subCategoryRoute);
 app.use('/subcategoryDetail',subCategoryDetailRoute);
+app.use('/products',productsRoute);
+
+
 app.listen(3000);
