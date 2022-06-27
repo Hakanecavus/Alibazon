@@ -37,6 +37,24 @@ app.use(function onError(err, req, res, next) {
     res.statusCode = 500;
     res.end(res.sentry + "\n");
 });
+get_breadcrumbs = function (url) {
+  var rtn = [{ name: "Home", url: "/home" }],
+    acc = "", // accumulative url
+    arr = url.substring(1).split("/");
+
+  for (i = 0; i < arr.length; i++) {
+    acc = i != arr.length - 1 ? acc + "/" + arr[i] : null;
+    rtn[i + 1] = {
+      name: arr[i].charAt(0).toUpperCase() + arr[i].slice(1),
+      url: acc,
+    };
+  }
+  return rtn;
+};
+app.use(function (req, res, next) {
+  req.breadcrumbs = get_breadcrumbs(req.originalUrl);
+  next();
+});
 app.use(express.json());
 app.use('/home',homeRoute);
 app.use('/categories',categoryRoute);

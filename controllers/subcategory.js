@@ -33,6 +33,7 @@ exports.getSubcategory = (req,res) =>{
           console.log(category_list)
           res.render('shop/subcategory', {
             category_list: category_list,
+            breadcrumbs: req.breadcrumbs,
             pageTitle: 'Sub Categories',
             path: '/subcategory/'+catId
           });

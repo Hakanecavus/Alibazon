@@ -32,6 +32,7 @@ exports.getProducts = (req,res) =>{
           }
           res.render('shop/subcategoryDetail', {
             product_list: product_list,
+            breadcrumbs: req.breadcrumbs,
             pageTitle: 'Sub Category Detail',
             path: '/subcategoryDetail/'+catId
           });
