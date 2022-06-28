@@ -48,5 +48,7 @@ app.use('/products',productsRoute);
 app.get('/', function(req, res) {
   res.redirect('/home')
 });
+module.exports = app
+
 
 app.listen(3000);
