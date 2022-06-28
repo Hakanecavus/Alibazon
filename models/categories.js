@@ -1,5 +1,5 @@
 class categories{
-    constructor(image, _id, id, name, page_description, page_title, parent_category_id, c_showInMenu, __v){
+    constructor(image, _id, id, name, page_description, page_title, parent_category_id){
         this.image= image;
         this._id = id;
         this.id = id;
@@ -7,8 +7,6 @@ class categories{
         this.page_description = page_description;
         this.page_title = page_title;
         this.parent_category_id = parent_category_id;
-        this.c_showInMenu = c_showInMenu;
-        this.__v = __v;
     }
 }
 module.exports = categories

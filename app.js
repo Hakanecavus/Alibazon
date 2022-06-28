@@ -62,5 +62,8 @@ app.use('/subcategory',subCategoryRoute);
 app.use('/subcategoryDetail',subCategoryDetailRoute);
 app.use('/products',productsRoute);
 
+app.get('/', function(req, res) {
+  res.redirect('/home')
+});
 
 app.listen(3000);
