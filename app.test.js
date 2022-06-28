@@ -2,18 +2,18 @@ const request = require('supertest');
 const app = require('./app');
 const categories = require('./routes/categories');
 
-/*const categories = require('./models/categories');
+//const categories = require('./models/categories');
 
 describe('categories', () =>
 {
     it('GET /categories', () =>
     {
-        return request(categories).get('/mens').expect('Content-Type', /json/).expect(200);
+        return request(categories).get('/categories/mens').expect('Content-Type', /json/).expect(200);
     })
 
-});*/
+});
 
-describe('GET /categories', function(){
+/*describe('GET /categories', function(){
     it('respond with json', function(done){
       request(categories)
         .get('/categories/mens')
@@ -24,4 +24,4 @@ describe('GET /categories', function(){
           done()
         });
     },30000)
-  });
+  });*/
