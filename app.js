@@ -5,6 +5,7 @@ const path = require('path');
 const https = require('https');
 
 const app = express();
+const loginRoute = require('./routes/auth');
 const homeRoute = require('./routes/home');
 const categoryRoute = require('./routes/categories');
 const subCategoryRoute = require('./routes/subcategory');
@@ -26,10 +27,12 @@ Sentry.init({
     tracesSampleRate: 1.0,
 });
 app.use( express.static( "public" ) );
-
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
+
 
 
 app.use(Sentry.Handlers.errorHandler());
@@ -39,6 +42,7 @@ app.use(function onError(err, req, res, next) {
 });
 
 app.use(express.json());
+app.use('/login',loginRoute);
 app.use('/home',homeRoute);
 app.use('/categories',categoryRoute);
 app.use('/subcategory',subCategoryRoute);
@@ -46,7 +50,7 @@ app.use('/subcategoryDetail',subCategoryDetailRoute);
 app.use('/products',productsRoute);
 
 app.get('/', function(req, res) {
-  res.redirect('/home')
+  res.redirect('/login')
 });
 module.exports = app
 

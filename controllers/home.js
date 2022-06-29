@@ -12,7 +12,7 @@ const options = {
 let json;
 let data="";
 var category_list = [];
-exports.postLogin = (req, res) => {
+exports.getParentCategories = (req, res) => {
 
   https.get(options,resp =>{
     resp.on("data", (chunk) => {
@@ -24,10 +24,12 @@ exports.postLogin = (req, res) => {
       for (var i = 0; i < json.length; i++) {
         if(json[i].parent_category_id =='mens' || json[i].parent_category_id =='womens'){
           let category = new categories(json[i].image, json[i]._id, json[i].id, json[i].page_description, json[i].page_title, json[i].parent_category_id);
-        if(category.image !='categories/category_404.png'){
-          category_list.push(category)
+        
+          if(category.image !='categories/category_404.png'){
+            category_list.push(category)
+          }
         }
-        }
+        
       }
       res.render('shop/home', {
         category_list: category_list,
