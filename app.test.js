@@ -67,3 +67,20 @@ describe('home', () =>
     })
 
 });
+
+describe('auth', () =>
+{
+    it('GET login', () =>
+    {
+        return request(app).get('/login').set('Accept', 'application/json').expect(200);
+    })
+    it('GET register', () =>
+    {
+        return request(app).get('/register').set('Accept', 'application/json').expect(200);
+    })
+    it('POST register', () =>
+    {
+        return request(app).post('/register').set('Accept', 'application/json').expect(200);
+    })
+
+});
