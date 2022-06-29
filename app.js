@@ -6,6 +6,7 @@ const https = require('https');
 
 const app = express();
 const loginRoute = require('./routes/auth');
+const registerRoute = require('./routes/register');
 const homeRoute = require('./routes/home');
 const categoryRoute = require('./routes/categories');
 const subCategoryRoute = require('./routes/subcategory');
@@ -43,6 +44,7 @@ app.use(function onError(err, req, res, next) {
 
 app.use(express.json());
 app.use('/login',loginRoute);
+app.use('/register',registerRoute);
 app.use('/home',homeRoute);
 app.use('/categories',categoryRoute);
 app.use('/subcategory',subCategoryRoute);
