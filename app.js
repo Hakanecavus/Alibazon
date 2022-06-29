@@ -3,6 +3,7 @@ const Sentry = require('@sentry/node');
 const Tracing = require("@sentry/tracing");
 const path = require('path');
 const https = require('https');
+const port = process.env.PORT || 3000;
 
 const app = express();
 const loginRoute = require('./routes/auth');
@@ -57,4 +58,4 @@ app.get('/', function(req, res) {
 module.exports = app
 
 
-app.listen(3000);
+app.listen(port);
