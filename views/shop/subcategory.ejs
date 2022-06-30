@@ -21,24 +21,27 @@
       </ol>
     </nav>
   </div>
-    <% if (category_list.length > 0) { %>
+  <% if (category_list.length > 0) { %>
+        
+    <% for (let category of category_list) { %>
         <div class ="container">
-            <% for (let category of category_list) { %>
-                <div class="row">
-                    <div class="col">
-                        <a href="/subcategoryDetail/<%= category.id %>"><img src="/images/<%= category.image %>"  id= "<%= category.id %>" class="d-block w-100" ></a>
-                        <div class ="container">
-                            <h4><%= category.page_description %></h4>
+        <div class="row mb-4">
+                <div class="col">
+                    <div class="card" style="width: 100%;height: auto;object-fit: contain;">
+                        <a href="/subcategoryDetail/<%= category.id %>" ><img class="card-img-top" src="/images/<%= category.image %>" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><%= category.id %></h5>
+                            <p class="card-text"><%= category.page_description %></p>
                         </div>
-                    
                     </div>
                 </div>
-
-            <% } %>
         </div>
-    <% } else { %>
-        <h1>No Products Found!</h1>
+    </div>
     <% } %>
+
+<% } else { %>
+<h1>No Products Found!</h1>
+<% } %>
 </body>
 </html>
 
