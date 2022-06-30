@@ -40,6 +40,9 @@ exports.getLogin = (req, res, next) => {
     if(resp.statusCode == 200){
       res.redirect('/home');
     }
+    else{
+      res.redirect('/login');
+    }
     
   });
   
@@ -82,6 +85,9 @@ exports.postRegister =(req, res, next) => {
     req.end();
     if(resp.statusCode == 200){
       res.redirect('/home');
+    }
+    else{
+      res.redirect('/login');
     }
     
   });
