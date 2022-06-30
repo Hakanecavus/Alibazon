@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656534354627" clover="3.2.0">
-  <project timestamp="1656534354627" name="All files">
-    <metrics statements="243" coveredstatements="222" conditionals="16" coveredconditionals="13" methods="36" coveredmethods="28" elements="295" coveredelements="263" complexity="0" loc="243" ncloc="243" packages="4" files="16" classes="16"/>
+<coverage generated="1656578107372" clover="3.2.0">
+  <project timestamp="1656578107372" name="All files">
+    <metrics statements="243" coveredstatements="207" conditionals="16" coveredconditionals="12" methods="36" coveredmethods="24" elements="295" coveredelements="243" complexity="0" loc="243" ncloc="243" packages="4" files="16" classes="16"/>
     <package name="Alibazon">
       <metrics statements="38" coveredstatements="35" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
-      <file name="app.js" path="C:\Users\hakan\Desktop\Alibazon\app.js">
+      <file name="app.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\app.js">
         <metrics statements="38" coveredstatements="35" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -47,9 +47,9 @@
       </file>
     </package>
     <package name="Alibazon.controllers">
-      <metrics statements="146" coveredstatements="128" conditionals="14" coveredconditionals="11" methods="32" coveredmethods="26"/>
-      <file name="auth.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\auth.js">
-        <metrics statements="44" coveredstatements="26" conditionals="4" coveredconditionals="1" methods="12" coveredmethods="6"/>
+      <metrics statements="146" coveredstatements="113" conditionals="14" coveredconditionals="10" methods="32" coveredmethods="22"/>
+      <file name="auth.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\auth.js">
+        <metrics statements="44" coveredstatements="11" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -77,25 +77,25 @@
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
         <line num="65" count="1" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="73" count="1" type="stmt"/>
-        <line num="75" count="1" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="79" count="1" type="stmt"/>
-        <line num="80" count="1" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="83" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="84" count="0" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="97" count="1" type="stmt"/>
-        <line num="98" count="1" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
       </file>
-      <file name="categories.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\categories.js">
+      <file name="categories.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\categories.js">
         <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -119,7 +119,7 @@
         <line num="45" count="2" type="stmt"/>
         <line num="46" count="2" type="stmt"/>
       </file>
-      <file name="home.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\home.js">
+      <file name="home.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\home.js">
         <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -142,7 +142,7 @@
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
       </file>
-      <file name="products.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\products.js">
+      <file name="products.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\products.js">
         <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -165,7 +165,7 @@
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
       </file>
-      <file name="subcategory.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\subcategory.js">
+      <file name="subcategory.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\subcategory.js">
         <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -178,7 +178,7 @@
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
@@ -189,7 +189,7 @@
         <line num="40" count="2" type="stmt"/>
         <line num="41" count="2" type="stmt"/>
       </file>
-      <file name="subcategoryDetail.js" path="C:\Users\hakan\Desktop\Alibazon\controllers\subcategoryDetail.js">
+      <file name="subcategoryDetail.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\controllers\subcategoryDetail.js">
         <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -215,7 +215,7 @@
     </package>
     <package name="Alibazon.models">
       <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="categories.js" path="C:\Users\hakan\Desktop\Alibazon\models\categories.js">
+      <file name="categories.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\models\categories.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="21" type="stmt"/>
         <line num="4" count="21" type="stmt"/>
@@ -226,7 +226,7 @@
         <line num="9" count="21" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
-      <file name="products.js" path="C:\Users\hakan\Desktop\Alibazon\models\products.js">
+      <file name="products.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\models\products.js">
         <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="32" type="stmt"/>
         <line num="4" count="32" type="stmt"/>
@@ -246,7 +246,7 @@
     </package>
     <package name="Alibazon.routes">
       <metrics statements="37" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="auth.js" path="C:\Users\hakan\Desktop\Alibazon\routes\auth.js">
+      <file name="auth.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\auth.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -255,7 +255,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="categories.js" path="C:\Users\hakan\Desktop\Alibazon\routes\categories.js">
+      <file name="categories.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\categories.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -263,7 +263,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
-      <file name="home.js" path="C:\Users\hakan\Desktop\Alibazon\routes\home.js">
+      <file name="home.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\home.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -271,7 +271,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
-      <file name="products.js" path="C:\Users\hakan\Desktop\Alibazon\routes\products.js">
+      <file name="products.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\products.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -279,7 +279,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
       </file>
-      <file name="register.js" path="C:\Users\hakan\Desktop\Alibazon\routes\register.js">
+      <file name="register.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\register.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -288,7 +288,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="subcategory.js" path="C:\Users\hakan\Desktop\Alibazon\routes\subcategory.js">
+      <file name="subcategory.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\subcategory.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -296,7 +296,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
       </file>
-      <file name="subcategoryDetail.js" path="C:\Users\hakan\Desktop\Alibazon\routes\subcategoryDetail.js">
+      <file name="subcategoryDetail.js" path="C:\Users\hecavus\Desktop\Alibazon\Alibazon\routes\subcategoryDetail.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

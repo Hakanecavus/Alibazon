@@ -78,9 +78,5 @@ describe('auth', () =>
     {
         return request(app).get('/register').set('Accept', 'application/json').expect(200);
     })
-    it('POST register', () =>
-    {
-        return request(app).post('/register').set('Accept', 'application/json').expect(200);
-    })
 
 });
